@@ -26,4 +26,9 @@ Slav::Slav()
 string Slav::description()
 {
 	return string("  ") + _name + " [" + to_string(_id) + "]";
+}	
+
+sex Slav::which_sex()
+{
+	return (((*(_name.end() - 1)) == 'a') ? female : male );
 }
